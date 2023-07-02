@@ -1,0 +1,449 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cuerpo", sans-serif;
+}
+
+header { 
+    background-color: rgb(183, 157, 112);
+    color: rgb(239, 228, 211);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 6em;     
+}
+
+h1 { 
+    background: url("../imagenes/logo_yoga_cel.png") no-repeat;
+    font-size: 0;
+    width: 100px;
+    height: 92px;
+    margin: auto;
+}
+
+#banner {
+    font-size: 0;
+}
+   
+#banner img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#menu > a { 
+    background: url("../imagenes/hamburguesaWEB.png") no-repeat ;
+    width: 4em;
+    height: 3em;
+    position: absolute;
+    list-style: none;
+    text-indent: -1000px;
+    overflow: hidden;
+    left: 1em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+ #barraNav {
+    background: rgb(183, 157, 112);
+    position: absolute;
+    width: 100%;
+    top: 6em;
+    left: -1000%;
+    height: auto;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    font-family: "menu", sans-serif;
+} 
+
+#barraNav li {
+    list-style: none;
+    margin: 1em;
+    width: 90%;
+    display: inline-block;
+}
+
+#barraNav li a {
+    text-decoration: none;
+    display: block;
+    background: rgb(183, 157, 112);
+    color: rgb(239, 228, 211);
+    text-align: center;
+    line-height: 1em;
+}
+
+#cerrar {
+    display: none;
+}
+
+#abrir:focus ~ #barraNav { 
+    left: 0;
+}
+
+#abrir:focus ~ #cerrar {
+    display: block;
+}
+
+/* PASTILLAS */
+
+#beneficios {
+    background-color: rgb(239, 228, 211);
+}
+
+.subtituloSeccion {
+    color: rgb(119 , 99, 71);
+    font-size: 3em;
+    font-family: "subtitulo", sans-serif;
+    padding: 10px;
+}
+
+#subSecColor {
+    color: rgb(239, 228, 211);
+}
+
+#pastillas {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#pastillas h3 {
+    padding: 20px 5px;
+    color:  rgb(119 , 99, 71);
+    text-align: center;
+}
+
+.pastillas_img {
+    text-align: center;
+    margin: auto;
+}
+
+#pastillas_lista li {
+    color:  rgb(119 , 99, 71);
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    vertical-align: auto; 
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 5px 0;
+}
+
+.pastillas_fig {
+        margin: auto;
+        left: 0;
+        right: 0;
+        padding: 5px;
+}
+
+#pastillas p {
+    padding-bottom: 2em;
+}
+
+section ul li {
+    list-style: none;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    vertical-align: top;
+} 
+
+/* PARRAFOS */
+
+#tips {
+    background-color: rgb(119 , 99, 71);
+    text-align: center;
+}
+
+#tips article {
+    padding:  0 2.5em;
+    padding-bottom: 3em;
+}
+
+#articulo {
+    color: rgb(231, 231, 224);
+}
+
+#articulo h3 {
+    font-family: 'subtitulo', sans-serif;
+    color: rgb(240, 178, 102);
+    padding: 15px;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+#articulo p{
+    font-family: 'cuerpo', sans-serif;
+    font-size: 18px;
+}
+
+.imgRutina img{
+    width: 50%;
+    border-radius: 2em;
+} 
+
+#articulo figure {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#articulo img {
+    border-radius: 2em;
+}
+
+/* CURSOS - VIDEO */
+
+#cursos {
+    max-width: 100%;
+    margin: auto;
+    background: rgb(239, 228, 211);
+}
+
+#cursos h2{
+    padding: 40px 0;
+}
+
+#videoCursos {
+    text-align: center;
+    line-height: 0;
+}
+
+#videoCursos p {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+video {            
+    max-width:  100%;
+    height: auto;
+}
+
+/* GALERIA */
+
+#nosotros{
+    background-color: rgb(240, 178, 102);
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#galeria {
+    display: flex;
+    flex-direction: row;
+}
+
+#galeria a img{
+    padding: 1em;
+    width: 100%;
+}
+
+#nosotros h2{
+    color: rgb(239, 228, 211);
+    padding: 10px 0 40px 0;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(239, 228, 211);
+    height: auto;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul {
+    padding: 0 3em;
+    padding-top: 1em;
+    color:  rgb(119 , 99, 71);
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#datos li{
+    font-family: 'cuerpo', sans-serif;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+footer #redes ul li{
+    list-style: none;
+    width: 50px;
+    display: inline-block;
+    margin: 5px; 
+}
+
+footer div ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    font-size: 0; 
+}
+
+#fb{
+    background: url("../imagenes/redes.png");
+    background-position: 0 0;
+}
+
+#fb:hover{
+    background-position: -50px 0;
+}
+
+#ig{
+    background: url("../imagenes/redes.png");
+    background-position: 0 100px;
+}
+
+#ig:hover{
+    background-position: -50px -50px;
+}
+
+#tw{
+    background: url("../imagenes/redes.png");
+    background-position: 0 50px;
+}
+
+#tw:hover{
+    background-position: -50px -100px;
+}
+
+@media screen and (max-width: 969px) and (min-width: 530px) {
+    
+    h1 {
+        background: url(../imagenes/logo_yoga.png) no-repeat;
+        width: 150px;
+        height:138px;
+    }
+
+    #menu > a { 
+        margin-top: 3.4em;
+    }
+
+    #barraNav {
+        top: 8.6em;
+    } 
+    
+   #cerrar {
+       display: none;
+   }
+   
+   #abrir:focus ~ #barraNav {
+       right: 0;
+   }
+   
+   #abrir:focus ~ #cerrar {
+       display: block;
+   }
+   
+   #beneficios ul li {
+       width: 45%;
+   } 
+
+   footer ul {
+        padding: 0.1em;
+   }
+   #videoCursos p {
+    font-size: 15px;
+    }
+   }
+   
+@media screen and (min-width: 970px) {
+
+    h1 {
+        background: url(../imagenes/logo_yoga.png) no-repeat;
+        width: 150px;
+        height:138px;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    #abrir, #cerrar {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        margin: auto;
+        min-height: 6em;
+    }
+
+    section {
+        margin: auto;
+    }
+
+    h1 {
+        display: inline-block;
+        
+    }
+
+    #menu {
+        display: inline-block;
+        width: 70%;
+        margin: auto;
+    }
+
+    #barraNav {
+        position: static;
+        height: auto;
+        background: none;
+        
+    }
+
+    #barraNav li {
+        width: 110px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #barraNav li a{
+        background: none;
+        margin-right: 2em;
+    }
+
+    #barraNav li a:hover{
+        color: rgb(119 , 99, 71);
+        font-weight: bold;
+        }
+    
+    #beneficios ul li{
+        width: 20%;
+        }
+    #cursos {  
+        width: 100%;
+        }
+
+    #videos {
+        max-width: 100%;
+        }
+}
+
+@media screen and (max-width: 529px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #videoCursos p {
+        font-size: 12px;
+    }
+}
